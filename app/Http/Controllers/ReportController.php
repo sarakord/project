@@ -39,8 +39,8 @@ class ReportController extends Controller
 
     public function show()
     {
-        /*$report=Report::paginate(3);
-        return view('report.report',['report'=>$report]);*/
+        $report=Report::paginate(4);
+        return view('report.report',['report'=>$report]);
     }
 
 

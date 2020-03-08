@@ -180,7 +180,7 @@
             width: 100%;
             height: 100%;
             position: fixed;
-            background: rgba(0, 0, 0, .3);
+            background: rgba(0, 0, 0, .6);
             left: 0;
             top: 0;
             z-index: 2;

@@ -109,7 +109,6 @@
 </script>
 
 @yield('slider')
-
 @yield('report')
 </body>
 </html>
