@@ -1,8 +1,9 @@
-@extends('layouts.slider')
+@extends('layouts.crud')
+
 @section('title')
-    @parent
-    INSERT
+    Slider Insert
 @endsection
+
 @section('content')
 
     <style>

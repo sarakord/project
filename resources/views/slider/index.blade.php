@@ -1,4 +1,9 @@
-@extends('layouts.slider')
+@extends('layouts.crud')
+
+@section('title')
+    Slider
+@endsection
+
 @section('content')
 
     <style>

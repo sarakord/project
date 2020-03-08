@@ -36,7 +36,7 @@ class SliderController extends Controller
 
     public function show()
     {
-        return view('layouts.master', ['slider' => Slider::get()]);
+        return view('slider.slider', ['slider' => Slider::get()]);
     }
 
 
