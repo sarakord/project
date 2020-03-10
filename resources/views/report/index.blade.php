@@ -78,7 +78,7 @@
             text-decoration: none;
         }
 
-        #detail{
+        .detail{
             width: 900px;
             height: 600px;
             background: #fff;
@@ -95,14 +95,14 @@
            display: none;
         }
 
-        #detail .reportImage{
+        .detail .reportImage{
             width: 170px;
             height: 170px;
             margin-top: 70px;
         }
 
 
-        #detail h3{
+        .detail h3{
             background: #eee;
             margin: 0;
             padding: 1px;
@@ -125,7 +125,7 @@
             border-radius: 100%;
         }
 
-        .btn #detail img{
+        .btn .detail img{
             margin: 29px;
             text-align: left;
         }
@@ -203,8 +203,9 @@
             <li class="image"><img src="{{asset('/images/report/'.$item->image)}}" ></li>
             <li>{{$item->title}}</li>
             <li class="btn">
-                    <input type="submit" value="More">
-                <div id="detail">
+                <button value="More" onclick="ShowModal({{$item->id}})">More</button>
+
+                <div id="detail-{{$item->id}}" class="detail">
                         <h3>{{$item->title}}
                             <span class="close"></span>
                         </h3>
@@ -226,7 +227,6 @@
                         </span>
                     </div>
                 </div>
-
 
             </li>
             <li>
@@ -251,13 +251,14 @@
     </div>
 
     <script>
-        $('.content .btn input').click(function () {
+        function ShowModal(id){
             $('#dark').fadeIn(200);
-            $('#detail').fadeIn(200);
-        });
+            $('#detail-'+id).fadeIn(200);
+        }
 
-        $('.content .btn #detail .close').click(function () {
-            $('#detail').fadeOut(200);
+
+        $('.content .btn .detail .close').click(function () {
+            $(this).parent().parent().fadeOut(200);
             $('#dark').fadeOut(200);
         });
     </script>

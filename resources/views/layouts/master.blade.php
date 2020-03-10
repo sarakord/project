@@ -18,15 +18,15 @@
         src: url({{asset('font/Vazir.eot?#')}}) format('eot'),
         url({{asset('font/Vazir.woff')}}) format('woff'),
         url({{asset('font/Vazir.ttf')}}) format('truetype');
-        font-style:normal;
-        font-weight:normal;
+        font-style: normal;
+        font-weight: normal;
     }
 
-    #menu{
-        margin-top: -125px;
+    #menu {
+        margin-top: -130px;
     }
 
-    #logo{
+    #logo {
         width: 450px;
         height: 80px;
         float: right;
@@ -39,11 +39,11 @@
         height: 50px;
     }
 
-    #navigator{
+    #navigator {
         float: left;
     }
 
-    #navigator ul li  {
+    #navigator ul li {
         font-family: vazir;
         list-style: none;
         float: right;
@@ -62,7 +62,7 @@
         background: red;
     }
 
-    #navigator ul li.act a{
+    #navigator ul li.act a {
         color: white !important;
     }
 
@@ -72,35 +72,35 @@
     }
 </style>
 
-    <div id="menu">
-        <div id="logo">
-            <img src="{{asset('logo/logo.png')}}">
-        </div>
-        <div id="navigator">
-            <ul>
-                <li class="act">
-                    <a href="">
-                        صفحه اصلی
-                    </a>
-                </li>
-                <li class="">
-                    <a href="">
-                        گالری
-                    </a>
-                </li>
-                <li class="">
-                    <a href="">
-                        درباره ما
-                    </a>
-                </li>
-                <li class="">
-                    <a href="">
-                        تماس با ما
-                    </a>
-                </li>
-            </ul>
-        </div>
+<div id="menu">
+    <div id="logo">
+        <img src="{{asset('logo/logo.png')}}">
     </div>
+    <div id="navigator">
+        <ul>
+            <li class="act">
+                <a href="">
+                    صفحه اصلی
+                </a>
+            </li>
+            <li class="">
+                <a href="">
+                    گالری
+                </a>
+            </li>
+            <li class="">
+                <a href="">
+                    درباره ما
+                </a>
+            </li>
+            <li class="">
+                <a href="">
+                    تماس با ما
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 <script>
     $('#navigator ul li').click(function () {
         $('#navigator ul li').removeClass('act');

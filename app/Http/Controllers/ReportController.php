@@ -76,5 +76,6 @@ class ReportController extends Controller
         $report->forceDelete();
         return back();
     }
+    
 
 }

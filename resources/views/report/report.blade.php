@@ -8,7 +8,7 @@
             width: 92%;
             background: #eae3e5;
             position: relative;
-            top: 516px;
+            top: 390px;
             margin-right: 45px;
             border: 1px solid #ad73bf;
             float: right;

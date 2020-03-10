@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/main', function () {
-    return view('layouts/master');
-});
+Route::get('/','SliderController@show');
 
 Route::resource('/slider','SliderController');
 Route::post('/slider/trash/{trash}', 'SliderController@trash')->name('slider.trash');
