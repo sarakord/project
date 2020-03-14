@@ -14,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','SliderController@show');
+/*Route::get('/',function (){
+    return view('layouts.master');
+});*/
 
 Route::resource('/slider','SliderController');
 Route::post('/slider/trash/{trash}', 'SliderController@trash')->name('slider.trash');
 
 Route::resource('/report','ReportController');
 
+Route::resource('/gallery','GalleryController');
 

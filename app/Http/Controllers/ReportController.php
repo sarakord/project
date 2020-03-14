@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Report;
+use App\Slider;
 use Illuminate\Http\Request;
 
 class ReportController extends Controller
@@ -39,8 +40,9 @@ class ReportController extends Controller
 
     public function show()
     {
-        $report=Report::paginate(4);
-        return view('report.report',['report'=>$report]);
+        $slider = Slider::get();
+        $report = Report::paginate(4);
+        return view('index', ['report' => $report, 'slider' => $slider]);
     }
 
 
@@ -76,6 +78,6 @@ class ReportController extends Controller
         $report->forceDelete();
         return back();
     }
-    
+
 
 }

@@ -21,13 +21,13 @@ class SliderController extends Controller
 
     public function store(Request $request)
     {
-        $slider= new Slider();
-        $slider->title=$request->title;
-        $file=$request->file('image');
-        if (!empty($file)){
-            $image=time().$file->getClientOriginalName();
-            $file->move('images/slider',$image);
-            $slider->image=$image;
+        $slider = new Slider();
+        $slider->title = $request->title;
+        $file = $request->file('image');
+        if (!empty($file)) {
+            $image = time() . $file->getClientOriginalName();
+            $file->move('images/slider', $image);
+            $slider->image = $image;
         }
         $slider->save();
         return redirect()->route('slider.index');
@@ -36,7 +36,8 @@ class SliderController extends Controller
 
     public function show()
     {
-        return view('slider.slider', ['slider' => Slider::get()]);
+
+        return view('layouts.master', ['slider' => Slider::get(),]);
     }
 
 
@@ -48,23 +49,24 @@ class SliderController extends Controller
 
     public function update(Request $request, $id)
     {
-      $update = Slider::where('id', $id)->first();
+        $update = Slider::where('id', $id)->first();
         $update->title = $request->title;
-        $file=$request->file('image');
-        if (!empty($file)){
-            $imageDelete=$update->image;
-            unlink('images/slider/'.$imageDelete);
-            $image=time().$file->getClientOriginalName();
-            $file->move('images/slider',$image);
-            $update->image=$image;
+        $file = $request->file('image');
+        if (!empty($file)) {
+            $imageDelete = $update->image;
+            unlink('images/slider/' . $imageDelete);
+            $image = time() . $file->getClientOriginalName();
+            $file->move('images/slider', $image);
+            $update->image = $image;
         }
         $update->save();
         return redirect()->route('slider.index');
     }
+
     public function destroy(Slider $slider)
     {
-        $delete =$slider->image;
-        unlink('images/slider/'.$delete);
+        $delete = $slider->image;
+        unlink('images/slider/' . $delete);
         $slider->forceDelete();
         return back();
     }

@@ -1,7 +1,7 @@
 @extends('layouts.crud')
 
 @section('title')
-    Slider Insert
+    Gallery Edit
 @endsection
 
 @section('content')
@@ -25,29 +25,36 @@
 
         .st {
             margin-top: 27px;
-            margin-left: 169px;
+            margin-left: 176px;
         }
 
         .input {
-            width: 284px;
-            height: 40px;
+            width: 200px;
+            height: 30px;
             cursor: pointer;
-            direction: rtl;
-            font-family: vazir;
         }
 
-        .img_input{
+        div {
+            margin-left: 213px;
+        }
+
+        div img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .img_input {
             width: 310px;
             height: 40px;
             cursor: pointer;
             margin-left: 212px;
         }
 
-        .bottom{
+        .bottom {
             margin-bottom: 10px;
         }
 
-        span{
+        span {
             background-color: darkgreen;
             width: 200px;
             height: 50px;
@@ -57,21 +64,24 @@
             display: block;
         }
 
-        span a{
+        span a {
             text-decoration: none;
             color: white;
         }
 
     </style>
-    <p> Insert Data</p>
+    <p> Update Data</p>
     <section>
-        <form action="{{route('slider.store')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('gallery.update',$gallery->id )}}" method="post" enctype="multipart/form-data">
             @csrf
-            @method('post')
-            <input type="text" name="title" class="input st"><br><br>
+            @method('put')
+            <input type="text" name="title" class="input st" value=" {{$gallery->title}}"><br><br>
             <input type="file" name="image" class="img_input st"><br>
+            <div>
+                <img src="{{asset('images/gallery/'.$gallery->image)}}" alt="">
+            </div>
             <input type="submit" class="input st bottom"><br>
         </form>
     </section>
-    <span><a href="{{route('slider.index')}}">Slider Management</a></span>
+    <span><a href="{{route('report.index')}}">Gallery Management</a></span>
 @endsection

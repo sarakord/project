@@ -64,7 +64,7 @@
             color: white;
         }
 
-        .buttom{
+        .bottom{
             margin-bottom: 10px;
         }
 
@@ -78,7 +78,7 @@
             <input type="text" name="brief" class="st input"><br><br>
             <textarea name="description" cols="100" rows="20" class="st text"></textarea><br><br>
             <input type="file" name="image" class="img_input st"><br>
-            <input type="submit" class="input st buttom"><br>
+            <input type="submit" class="input st bottom"><br>
         </form>
     </section>
     <span><a href="{{route('report.index')}}">Report Management</a></span>

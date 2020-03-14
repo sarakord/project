@@ -1,27 +1,28 @@
 @extends('layouts.master')
 
-@section('report')
+@section('content')
 
     <style>
 
-        .main {
-            width: 92%;
+        .news {
+            width: 91.5%;
             background: #eae3e5;
             position: relative;
-            top: 390px;
-            margin-right: 45px;
+            top: 110px;
+            margin-right: 53px;
             border: 1px solid #ad73bf;
             float: right;
             border-radius: 4px;
             overflow: hidden;
+            margin-bottom: 40px;
         }
 
-        .main .title {
+        .news .title {
             border-bottom: 1px solid #cdbbd8;
             height: 43px;
         }
 
-        .main .last {
+        .news .last {
             font-size: 12pt;
             font-weight: bold;
             font-family: vazir;
@@ -31,7 +32,7 @@
             float: right;
         }
 
-        .main .more {
+        .news .more {
             font-family: vazir;
             font-size: 9pt;
             line-height: 43px;
@@ -53,7 +54,7 @@
         }
 
         .report img {
-            width: 250px;
+            width: 248px;
             height: 200px;
         }
 
@@ -63,22 +64,27 @@
             font-size: 10pt;
             text-align: center;
             font-weight: bold;
+            line-height: 31px;
         }
 
     </style>
 
-    <div class="main">
+    <div class="news">
         <div class="title">
             <span class="last">آخرین اخبار</span>
-            <span class="more">بیشتر</span>
+            <a href=""><span class="more">بیشتر</span></a>
         </div>
         @foreach($report as $item)
-            <div class="report">
-                <img src="{{asset('images/report/'.$item->image)}}" alt="">
-                <p>{{$item->title}}</p>
-            </div>
+            <a href="">
+                <div class="report">
+                    <img src="{{asset('images/report/'.$item->image)}}" alt="">
+                    <p>{{$item->title}}</p>
+                </div>
+            </a>
 
         @endforeach
     </div>
+
+
 
 @endsection

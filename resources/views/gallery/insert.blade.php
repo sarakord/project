@@ -1,7 +1,7 @@
 @extends('layouts.crud')
 
 @section('title')
-    Slider Insert
+    Gallery Insert
 @endsection
 
 @section('content')
@@ -29,6 +29,16 @@
         }
 
         .input {
+            width: 200px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .bottom{
+            margin-bottom: 10px;
+        }
+
+        .input {
             width: 284px;
             height: 40px;
             cursor: pointer;
@@ -41,10 +51,6 @@
             height: 40px;
             cursor: pointer;
             margin-left: 212px;
-        }
-
-        .bottom{
-            margin-bottom: 10px;
         }
 
         span{
@@ -65,13 +71,13 @@
     </style>
     <p> Insert Data</p>
     <section>
-        <form action="{{route('slider.store')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('gallery.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('post')
-            <input type="text" name="title" class="input st"><br><br>
+            <input type="text" name="title" class="st input"><br><br>
             <input type="file" name="image" class="img_input st"><br>
             <input type="submit" class="input st bottom"><br>
         </form>
     </section>
-    <span><a href="{{route('slider.index')}}">Slider Management</a></span>
+    <span><a href="{{route('gallery.index')}}">Gallery Management</a></span>
 @endsection

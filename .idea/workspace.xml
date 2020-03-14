@@ -4,9 +4,14 @@
     <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/insert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/report.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/slider.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,21 +161,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/gallery" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\layouts" />
-      <recent name="C:\xampp\htdocs\laravel\project\public\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\gallery" />
       <recent name="C:\xampp\htdocs\laravel\project\public\images" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\report" />
       <recent name="C:\xampp\htdocs\laravel\project\public\font" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\slider" />
-      <recent name="C:\xampp\htdocs\laravel\project\public\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\layouts" />
+      <recent name="C:\xampp\htdocs\laravel\project\public\js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.master.blade.php">
@@ -219,6 +224,9 @@
       <workItem from="1583613579917" duration="2766000" />
       <workItem from="1583668759613" duration="13479000" />
       <workItem from="1583731926704" duration="12689000" />
+      <workItem from="1583827254892" duration="89000" />
+      <workItem from="1584111573377" duration="3111000" />
+      <workItem from="1584189697082" duration="6781000" />
     </task>
     <servers />
   </component>
@@ -234,6 +242,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1583502732202" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584113217411">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584113217411" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583568827869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -258,17 +270,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583731973657">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584190111505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583731973657" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584190111505" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1583692970055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583692970055" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583743891044">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584113295030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583743891044" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584113295030" />
   </component>
 </project>

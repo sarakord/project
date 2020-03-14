@@ -70,7 +70,7 @@
             height: 100px;
         }
 
-        .buttom{
+        .bottom{
             margin-bottom: 10px;
         }
 
@@ -87,7 +87,7 @@
             <div>
                 <img src="{{asset('images/report/'.$report->image)}}" alt="">
             </div>
-            <input type="submit" class="input st buttom"><br>
+            <input type="submit" class="input st bottom"><br>
         </form>
     </section>
     <span><a href="{{route('report.index')}}">Report Management</a></span>

@@ -25,7 +25,7 @@
 
         .st {
             margin-top: 27px;
-            margin-left: 169px;
+            margin-left: 180px;
         }
 
         .input {
@@ -43,6 +43,31 @@
             height: 100px;
         }
 
+        span{
+            background-color: darkgreen;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 45px;
+            margin: 40px auto;
+            display: block;
+        }
+
+        span a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .img_input{
+            width: 310px;
+            height: 40px;
+            cursor: pointer;
+            margin-left: 212px;
+        }
+
+        .bottom{
+            margin-bottom: 10px;
+        }
 
     </style>
     <p> Update Data</p>
@@ -50,16 +75,13 @@
         <form action="{{route('slider.update',$slider->id )}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('put')
-            <input type="text" name="title" class="st" value=" {{$slider->title}}"><br><br>
-            <input type="file" name="image" class="input st"><br>
+            <input type="text" name="title" class="st input" value=" {{$slider->title}}"><br><br>
+            <input type="file" name="image" class="img_input st"><br>
             <div>
                 <img src="{{asset('images/slider/'.$slider->image)}}" alt="">
             </div>
-            <input type="submit" class="input st"><br>
+            <input type="submit" class="input bottom st"><br>
         </form>
     </section>
-    <div class="fix">
-        <h1><a href="{{route('slider.index')}}" class="btn">Data</a></h1>
-        <h1><a href="{{url('slider/{slider}')}}" class="btn">Slider</a></h1>
-    </div>
+    <span><a href="{{route('slider.index')}}">Slider Management</a></span>
 @endsection
