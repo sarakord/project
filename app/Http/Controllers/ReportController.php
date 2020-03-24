@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Gallery;
 use App\Report;
 use App\Slider;
 use Illuminate\Http\Request;
@@ -42,7 +43,8 @@ class ReportController extends Controller
     {
         $slider = Slider::get();
         $report = Report::paginate(4);
-        return view('index', ['report' => $report, 'slider' => $slider]);
+        $gallery=Gallery::paginate(4);
+        return view('index', ['report' => $report, 'slider' => $slider, 'gallery'=>$gallery]);
     }
 
 

@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/insert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/report.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/slider/slider.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +220,13 @@
       <workItem from="1583731926704" duration="12689000" />
       <workItem from="1583827254892" duration="89000" />
       <workItem from="1584111573377" duration="3111000" />
-      <workItem from="1584189697082" duration="6781000" />
+      <workItem from="1584189697082" duration="7378000" />
+      <workItem from="1584882218245" duration="37000" />
+      <workItem from="1584882286661" duration="1243000" />
+      <workItem from="1585076309334" duration="72000" />
+      <workItem from="1585076533940" duration="122000" />
+      <workItem from="1585076678891" duration="302000" />
+      <workItem from="1585077008837" duration="2920000" />
     </task>
     <servers />
   </component>
@@ -270,10 +270,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584190111505">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585077010445">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584190111505" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585077010445" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1583692970055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

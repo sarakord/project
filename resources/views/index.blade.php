@@ -1,10 +1,21 @@
 @extends('layouts.master')
 
+@section('attach')
+    <link rel="stylesheet" href="{{asset('lightgallery.js/src/css/lightgallery.css')}}">
+
+    <script src="{{asset('lightgallery.js/demo/js/lightgallery.min.js')}}"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="{{asset('lightgallery.js/demo/js/lg-thumbnail.min.js')}}"></script>
+    <script src="{{asset('lightgallery.js/demo/js/lg-fullscreen.min.js')}}"></script>
+
+@endsection
+
 @section('content')
 
     <style>
 
-        .news {
+        .box {
             width: 91.5%;
             background: #eae3e5;
             position: relative;
@@ -17,12 +28,12 @@
             margin-bottom: 40px;
         }
 
-        .news .title {
+        .box .title {
             border-bottom: 1px solid #cdbbd8;
             height: 43px;
         }
 
-        .news .last {
+        .box .last {
             font-size: 12pt;
             font-weight: bold;
             font-family: vazir;
@@ -32,7 +43,7 @@
             float: right;
         }
 
-        .news .more {
+        .box .more {
             font-family: vazir;
             font-size: 9pt;
             line-height: 43px;
@@ -42,7 +53,7 @@
             cursor: pointer;
         }
 
-        .report {
+        .show {
             width: 250px;
             height: 256px;
             float: right;
@@ -53,12 +64,12 @@
             cursor: pointer;
         }
 
-        .report img {
+        .show img {
             width: 248px;
             height: 200px;
         }
 
-        .report p {
+        .show p {
             direction: rtl;
             font-family: vazir;
             font-size: 10pt;
@@ -67,16 +78,17 @@
             line-height: 31px;
         }
 
+
     </style>
 
-    <div class="news">
+    <div class="box">
         <div class="title">
             <span class="last">آخرین اخبار</span>
             <a href=""><span class="more">بیشتر</span></a>
         </div>
         @foreach($report as $item)
             <a href="">
-                <div class="report">
+                <div class="show">
                     <img src="{{asset('images/report/'.$item->image)}}" alt="">
                     <p>{{$item->title}}</p>
                 </div>
@@ -85,6 +97,23 @@
         @endforeach
     </div>
 
+  {{--  lightgallery--}}
+    <div class="box">
+        <div class="title">
+            <span class="last">گالری تصاویر</span>
+            <a href=""><span class="more">بیشتر</span></a>
+        </div>
+        <div id="lightgallery">
+            @foreach($gallery as $item)
+                <a href="{{asset('/images/gallery/'.$item->image)}}">
+                    <img class="show" src="{{asset('/images/gallery/'.$item->image)}}">
+                </a>
+            @endforeach
+        </div>
+    </div>
 
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
 
 @endsection
