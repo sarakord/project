@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>@yield('title')</title>
     <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
     @yield('attach')
 </head>
@@ -111,7 +111,7 @@
 
 <style>
 
-    #slider{
+    #slider {
         position: relative;
         top: 300px;
     }
@@ -143,7 +143,7 @@
         margin-left: 63px;
     }
 
-    .mySlides img{
+    .mySlides img {
         width: 100%;
         margin-top: -89px;
     }
@@ -229,6 +229,35 @@
         position: relative;
         top: 92px;
     }
+
+    .footer {
+        background: #be97d2;
+        width: 100%;
+        height: 170px;
+        float: right;
+        margin-top: 120px;
+    }
+
+    .footer p {
+        color: black;
+        text-align: center;
+        font-family: vazir;
+        font-size: 16pt;
+    }
+
+    .footer span{
+        display: block;
+        text-align: center;
+    }
+
+    .footer span i {
+        background: url("{{asset('images/slices.png')}}");
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
 </style>
 <div id="Slider">
     <div class="slideshow-container">
@@ -283,5 +312,21 @@
 
 </script>
 @yield('content')
+
+{{--footer--}}
+<div class="footer">
+    <p>
+        ما را در شبکه های اجتماعی دنبال کنید
+    </p>
+    <span>
+        <i style="background-position: -368px -619px;"></i>
+        <i style="background-position: -411px -619px;"></i>
+        <i style="background-position: -453px -619px;"></i>
+        <i style="background-position: -493px -619px;"></i>
+        <i style="background-position: -534px -619px;"></i>
+        <i style="background-position: -576px -619px;"></i>
+        <i style="background-position: -617px -619px;"></i>
+    </span>
+</div>
 </body>
 </html>

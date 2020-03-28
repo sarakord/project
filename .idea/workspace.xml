@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
@@ -155,7 +153,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/gallery" />
+    <property name="last_opened_file_path" value="E:/WEB/درس/Digi" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -226,7 +224,8 @@
       <workItem from="1585076309334" duration="72000" />
       <workItem from="1585076533940" duration="122000" />
       <workItem from="1585076678891" duration="302000" />
-      <workItem from="1585077008837" duration="2920000" />
+      <workItem from="1585077008837" duration="3516000" />
+      <workItem from="1585413079586" duration="4148000" />
     </task>
     <servers />
   </component>
@@ -246,10 +245,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584113217411" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583568827869">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585416437650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583568827869" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585416437650" />
     <state width="1323" height="158" key="GridCell.Tab.0.bottom" timestamp="1583501447745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -270,10 +269,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585077010445">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585413087454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585077010445" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585413087454" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1583692970055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

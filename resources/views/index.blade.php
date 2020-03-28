@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    صفحه اصلی
+@endsection
+
 @section('attach')
     <link rel="stylesheet" href="{{asset('lightgallery.js/src/css/lightgallery.css')}}">
 
