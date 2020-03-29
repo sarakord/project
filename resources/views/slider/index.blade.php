@@ -66,7 +66,7 @@
         }
 
         div h1 {
-            width: 118px;
+            width: 147px;
             height: 48px;
             border: 1px solid #791fbd;
             text-align: center;
@@ -115,6 +115,8 @@
 </div>
     <div class="fix">
         <h1><a href="{{route('slider.create')}}" class="btn">Create</a></h1>
-        <h1><a href="{{url('slider/{slider}')}}" class="btn">Slider</a></h1>
+        <h1><a href="{{route('main')}}" class="btn">Main Page</a></h1>
+        <h1><a href="{{route('gallery.index')}}" class="btn">Gallery</a></h1>
+        <h1><a href="{{route('report.index')}}" class="btn">Report</a></h1>
     </div>
 @endsection

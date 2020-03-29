@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','SliderController@show');
+Route::get('/','ReportController@main')->name('main');
 /*Route::get('/',function (){
     return view('layouts.master');
 });*/
@@ -23,5 +23,8 @@ Route::post('/slider/trash/{trash}', 'SliderController@trash')->name('slider.tra
 
 Route::resource('/report','ReportController');
 
+
+Route::get('/ShowGallery','GalleryController@ShowGallery')->name('gallery');
 Route::resource('/gallery','GalleryController');
+
 

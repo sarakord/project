@@ -111,6 +111,8 @@
 </div>
     <div class="fix">
         <h1><a href="{{route('gallery.create')}}" class="btn">Create</a></h1>
-        <h1><a href="{{url('/')}}" class="btn">main page</a></h1>
+        <h1><a href="{{route('main')}}" class="btn">Main Page</a></h1>
+        <h1><a href="{{route('report.index')}}" class="btn">Report</a></h1>
+        <h1><a href="{{route('slider.index')}}" class="btn">Slider</a></h1>
     </div>
 @endsection

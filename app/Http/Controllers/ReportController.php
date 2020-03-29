@@ -41,10 +41,7 @@ class ReportController extends Controller
 
     public function show()
     {
-        $slider = Slider::get();
-        $report = Report::paginate(4);
-        $gallery=Gallery::paginate(4);
-        return view('index', ['report' => $report, 'slider' => $slider, 'gallery'=>$gallery]);
+        //
     }
 
 
@@ -82,4 +79,11 @@ class ReportController extends Controller
     }
 
 
+    public function main()
+    {
+        $slider = Slider::get();
+        $report = Report::paginate(4);
+        $gallery=Gallery::paginate(4);
+        return view('index', ['report' => $report, 'slider' => $slider, 'gallery'=>$gallery]);
+    }
 }

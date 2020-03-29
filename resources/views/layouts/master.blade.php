@@ -80,12 +80,12 @@
     <div id="navigator">
         <ul>
             <li class="act">
-                <a href="">
+                <a href="{{route('main')}}">
                     صفحه اصلی
                 </a>
             </li>
             <li class="">
-                <a href="">
+                <a href="{{route('gallery')}}">
                     گالری
                 </a>
             </li>

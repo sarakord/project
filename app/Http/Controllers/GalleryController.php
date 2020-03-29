@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Gallery;
+use App\Slider;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -35,7 +36,7 @@ class GalleryController extends Controller
     }
 
 
-    public function show(Gallery $gallery)
+    public function show()
     {
         //
     }
@@ -71,5 +72,12 @@ class GalleryController extends Controller
         $gallery->forceDelete();
         return back();
 
+    }
+
+
+    public function ShowGallery(){
+
+        $slider = Slider::get();
+        return view('pages.gallery', ['gallery' => Gallery::get() , 'slider' => $slider]  ) ;
     }
 }
