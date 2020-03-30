@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/gallery.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +231,8 @@
       <workItem from="1585413079586" duration="6101000" />
       <workItem from="1585500554904" duration="340000" />
       <workItem from="1585500903087" duration="3186000" />
-      <workItem from="1585505382253" duration="6890000" />
+      <workItem from="1585505382253" duration="7675000" />
+      <workItem from="1585585185713" duration="2651000" />
     </task>
     <servers />
   </component>
@@ -277,10 +276,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585505384171">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585585284820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585505384171" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585585284820" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1585510530186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

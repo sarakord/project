@@ -17,6 +17,7 @@ Route::get('/','ReportController@main')->name('main');
 /*Route::get('/',function (){
     return view('layouts.master');
 });*/
+Route::get('/about','AboutUsController@about')->name('about');
 
 Route::resource('/slider','SliderController');
 Route::post('/slider/trash/{trash}', 'SliderController@trash')->name('slider.trash');

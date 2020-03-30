@@ -38,7 +38,7 @@
             height: 43px;
         }
 
-        .box .last {
+        .box .gallery {
             font-size: 12pt;
             font-weight: bold;
             font-family: vazir;
@@ -72,7 +72,7 @@
     {{--  lightgallery--}}
     <div class="box">
         <div class="title">
-            <span class="last">گالری تصاویر</span>
+            <span class="gallery">گالری تصاویر</span>
         </div>
         <div id="lightgallery">
             @foreach($gallery as $item)

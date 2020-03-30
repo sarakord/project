@@ -90,7 +90,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="">
+                <a href="{{route('about')}}">
                     درباره ما
                 </a>
             </li>
