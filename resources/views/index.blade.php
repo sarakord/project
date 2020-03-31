@@ -88,10 +88,10 @@
     <div class="box">
         <div class="title">
             <span class="last">آخرین اخبار</span>
-            <a href=""><span class="more">بیشتر</span></a>
+            <a href="{{route('report.all')}}"><span class="more">بیشتر</span></a>
         </div>
         @foreach($report as $item)
-            <a href="">
+            <a href="{{route('report.show' , $item->id)}}">
                 <div class="show">
                     <img src="{{asset('images/report/'.$item->image)}}" alt="">
                     <p>{{$item->title}}</p>
@@ -105,7 +105,7 @@
     <div class="box">
         <div class="title">
             <span class="last">گالری تصاویر</span>
-            <a href=""><span class="more">بیشتر</span></a>
+            <a href="{{route('gallery')}}"><span class="more">بیشتر</span></a>
         </div>
         <div id="lightgallery">
             @foreach($gallery as $item)

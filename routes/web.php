@@ -23,9 +23,14 @@ Route::resource('/slider','SliderController');
 Route::post('/slider/trash/{trash}', 'SliderController@trash')->name('slider.trash');
 
 Route::resource('/report','ReportController');
+Route::get('/news','ReportController@news')->name('report.all');
 
 
 Route::get('/ShowGallery','GalleryController@ShowGallery')->name('gallery');
 Route::resource('/gallery','GalleryController');
 
+Route::delete('/contact/{id}' ,'ContactController@destroy')->name('contact.delete');
+Route::get('/contact' ,'ContactController@create');
+Route::post('/contact' ,'ContactController@store')->name('contact.store');
+Route::get('/allcontact' ,'ContactController@index')->name('contact.all');
 

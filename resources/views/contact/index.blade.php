@@ -1,7 +1,7 @@
 @extends('layouts.crud')
 
 @section('title')
-    Report
+    Contact
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
         }
 
         .header {
-            width:1014px;
+            width: 1014px;
             float: right;
             padding: 0;
             background: #d4dbe2;
@@ -25,7 +25,7 @@
             float: left;
             font-size: 17pt;
             text-align: center;
-            width: 166px;
+            width: 202px;
             list-style: none;
         }
 
@@ -43,11 +43,11 @@
             float: left;
             font-size: 11pt;
             text-align: center;
-            width: 166px;
+            width: 202px;
 
         }
 
-        .content .image img{
+        .content .image img {
             width: 50px;
             height: 50px;
             display: block;
@@ -74,11 +74,7 @@
             cursor: pointer;
         }
 
-        .btn {
-            text-decoration: none;
-        }
-
-        .detail{
+        .detail {
             width: 900px;
             height: 600px;
             background: #fff;
@@ -92,17 +88,10 @@
             box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
             z-index: 3;
             font-family: vazir;
-           display: none;
+            display: none;
         }
 
-        .detail .reportImage{
-            width: 170px;
-            height: 170px;
-            margin-top: 70px;
-        }
-
-
-        .detail h3{
+        .detail h3 {
             background: #eee;
             margin: 0;
             padding: 1px;
@@ -113,8 +102,8 @@
             position: relative;
         }
 
-        .close{
-            background:url("{{asset('/images/slices.png')}}") no-repeat -134px -123px ;
+        .close {
+            background: url("{{asset('/images/slices.png')}}") no-repeat -134px -123px;
             width: 28px;
             height: 28px;
             position: absolute;
@@ -125,49 +114,35 @@
             border-radius: 100%;
         }
 
-        .btn .detail img{
-            margin: 29px;
-            text-align: left;
-        }
-
-        .right p{
+        .main p {
             line-height: 20px;
         }
 
-        .right{
-            float: right;
-            text-align: right;
+        .main {
+            text-align: justify;
+            width: 100%;
+            direction: rtl;
         }
 
-        .right div{
+        .main div {
             margin-bottom: 35px;
             position: relative;
-            /* margin-top: -170px; */
-            top: -235px;
         }
 
-        .right span{
-            position: relative;
-            top: -200px;
-        }
-
-        .left{
-            float: left;
-        }
-
-        .title{
+        .title {
             font-family: vazir;
-            font-size: 12pt;
+            font-size: 13pt;
             padding-right: 27px;
             font-weight: bold;
         }
 
-        .main{
-            margin-right: 23px;
+        .text {
+            margin-right: 80px;
             direction: rtl;
             text-align: justify;
             margin-left: 32px;
-
+            font-family: vazir;
+            font-size: 11pt;
         }
 
         #dark {
@@ -182,79 +157,76 @@
         }
 
     </style>
-<div>
-    <ul class="header">
-        <li>Id</li>
-        <li>Image</li>
-        <li>Title</li>
-        <li>Detail</li>
-        <li>Edit</li>
-        <li>Delete</li>
-    </ul>
-    @foreach($report as $item)
-        <ul class="content">
-            <li>{{$item->id}}</li>
-            <li class="image"><img src="{{asset('/images/report/'.$item->image)}}" ></li>
-            <li>{{$item->title}}</li>
-            <li class="btn">
-                <button value="More" onclick="ShowModal({{$item->id}})">More</button>
+    <div>
+        <ul class="header">
+            <li>Id</li>
+            <li>Name</li>
+            <li>Title</li>
+            <li>Detail</li>
+            <li>Delete</li>
+        </ul>
+        @foreach($contact as $item)
+            <ul class="content">
+                <li>{{$item->id}}</li>
+                <li>{{$item->name}}</li>
+                <li>{{$item->title}}</li>
+                <li class="btn">
+                    <button value="More" onclick="ShowModal({{$item->id}})">More</button>
 
-                <div id="detail-{{$item->id}}" class="detail">
+                    <div id="detail-{{$item->id}}" class="detail">
                         <h3>{{$item->title}}
                             <span class="close"></span>
                         </h3>
-                    <div class="left">
-                    <img src="{{asset('/images/report/'.$item->image)}}" alt="" class="reportImage">
-                    </div>
-                    <div class="right">
-                        <div>
-                            <p class="title"> : تیتر </p>
-                            <p class="main">{{$item->title}}</p>
-                        </div>
-                        <div>
-                            <p class="title"> : خلاصه </p>
-                            <p class="main">{{$item->Brief}}</p>
-                        </div>
-                        <span class="description">
-                            <p class="title"> : شرح </p>
-                            <p class="main">{{$item->description}}</p>
+                        <div class="main">
+                            <div>
+                                <p class="title"> نام : </p>
+                                <p class="text">{{$item->name}}</p>
+                            </div>
+                            <div>
+                                <p class="title"> ایمیل : </p>
+                                <p class="text">{{$item->email}}</p>
+                            </div>
+                            <div>
+                                <p class="title"> موضوع : </p>
+                                <p class="text">{{$item->title}}</p>
+                            </div>
+                            <span >
+                            <p class="title">محتوا :</p>
+                            <p class="text">{{$item->content}}</p>
                         </span>
+                        </div>
                     </div>
-                </div>
 
-            </li>
-            <li>
-                <a href="{{route('report.edit',$item->id)}}"><input type="submit" value="Edit"></a>
-            </li>
-            <li>
-            <li>
-                <form action="{{route('report.destroy',$item->id)}}" method="post">
-                    @csrf
-                    @method('delete')
-                    <input type="submit" value="Delete">
-                </form>
-            </li>
+                </li>
 
-        </ul>
-    @endforeach
-</div>
+                <li>
+                    <form action="{{route('contact.delete',$item->id)}}" method="post">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" value="Delete">
+                    </form>
+                </li>
+
+            </ul>
+        @endforeach
+    </div>
     <div id="dark"></div>
     <div class="fix">
         <h1><a href="{{route('report.create')}}" class="btn">Create</a></h1>
         <h1><a href="{{route('main')}}" class="btn">Main Page</a></h1>
         <h1><a href="{{route('gallery.index')}}" class="btn">Gallery</a></h1>
         <h1><a href="{{route('slider.index')}}" class="btn">Slider</a></h1>
-        <h1><a href="{{route('contact.all')}}" class="btn">Contact</a></h1>
+        <h1><a href="{{route('report.index')}}" class="btn">Report</a></h1>
     </div>
 
     <script>
-        function ShowModal(id){
+        function ShowModal(id) {
             $('#dark').fadeIn(200);
-            $('#detail-'+id).fadeIn(200);
+            $('#detail-' + id).fadeIn(200);
         }
 
 
-        $('.content .btn .detail .close').click(function () {
+        $('.content .detail .close').click(function () {
             $(this).parent().parent().fadeOut(200);
             $('#dark').fadeOut(200);
         });

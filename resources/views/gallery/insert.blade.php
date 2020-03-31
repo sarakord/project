@@ -28,11 +28,6 @@
             margin-left: 169px;
         }
 
-        .input {
-            width: 200px;
-            height: 30px;
-            cursor: pointer;
-        }
 
         .bottom{
             margin-bottom: 10px;

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Gallery;
 use App\Report;
 use App\Slider;
+use App\Gallery;
 use Illuminate\Http\Request;
 
 class ReportController extends Controller
@@ -39,9 +39,11 @@ class ReportController extends Controller
     }
 
 
-    public function show()
+    public function show($id)
     {
-        //
+        $report=Report::where('id' , $id)->first();
+        $slider=Slider::get();
+        return view('pages.report',['slider'=>$slider , 'report'=>$report]);
     }
 
 
@@ -85,5 +87,11 @@ class ReportController extends Controller
         $report = Report::paginate(4);
         $gallery=Gallery::paginate(4);
         return view('index', ['report' => $report, 'slider' => $slider, 'gallery'=>$gallery]);
+    }
+
+    public function news()
+    {
+        $slider=Slider::get();
+        return view('pages.allreport',['slider'=>$slider , 'report'=>Report::get()]);
     }
 }

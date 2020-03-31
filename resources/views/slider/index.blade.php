@@ -118,5 +118,6 @@
         <h1><a href="{{route('main')}}" class="btn">Main Page</a></h1>
         <h1><a href="{{route('gallery.index')}}" class="btn">Gallery</a></h1>
         <h1><a href="{{route('report.index')}}" class="btn">Report</a></h1>
+        <h1><a href="{{route('contact.all')}}" class="btn">Contact</a></h1>
     </div>
 @endsection

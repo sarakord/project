@@ -90,12 +90,17 @@
                 </a>
             </li>
             <li class="">
+                <a href="{{route('report.all')}}">
+                    آخرین اخبار
+                </a>
+            </li>
+            <li class="">
                 <a href="{{route('about')}}">
                     درباره ما
                 </a>
             </li>
             <li class="">
-                <a href="">
+                <a href="{{url('contact')}}">
                     تماس با ما
                 </a>
             </li>
