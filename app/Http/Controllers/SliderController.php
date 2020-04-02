@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\createSliderRequest;
+use App\Http\Requests\editSliderRequest;
 use App\Slider;
 use Illuminate\Http\Request;
 
@@ -19,7 +21,7 @@ class SliderController extends Controller
         return view('slider.insert');
     }
 
-    public function store(Request $request)
+    public function store(createSliderRequest $request)
     {
         $slider = new Slider();
         $slider->title = $request->title;
@@ -47,7 +49,7 @@ class SliderController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(editSliderRequest $request, $id)
     {
         $update = Slider::where('id', $id)->first();
         $update->title = $request->title;

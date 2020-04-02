@@ -59,6 +59,10 @@
             cursor: pointer;
         }
 
+        .btn {
+            text-decoration: none;
+        }
+
         .fix {
             position: fixed;
             margin-left: 25px;

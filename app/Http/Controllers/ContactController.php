@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Http\Requests\createContactRequest;
 use App\Slider;
 use DemeterChain\C;
 use Illuminate\Http\Request;
@@ -23,7 +24,7 @@ class ContactController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(createContactRequest $request)
     {
 
         $contact = new Contact();

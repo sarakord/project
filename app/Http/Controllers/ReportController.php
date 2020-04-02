@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\createReportRequest;
+use App\Http\Requests\editReportRequest;
 use App\Report;
 use App\Slider;
 use App\Gallery;
@@ -22,7 +24,7 @@ class ReportController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(createReportRequest $request)
     {
         $report = new Report();
         $report->title = $request->title;
@@ -53,7 +55,7 @@ class ReportController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(editReportRequest $request, $id)
     {
         $report = Report::findorfail($id);
         $report->title = $request->title;

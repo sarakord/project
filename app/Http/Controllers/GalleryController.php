@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Gallery;
+use App\Http\Requests\createGalleryRequest;
+use App\Http\Requests\editGalleryRequest;
 use App\Slider;
 use Illuminate\Http\Request;
 
@@ -21,7 +23,7 @@ class GalleryController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(createGalleryRequest $request)
     {
         $gallery = new Gallery();
         $gallery->title = $request->title;
@@ -48,7 +50,7 @@ class GalleryController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(editGalleryRequest $request, $id)
     {
         $gallery = Gallery::findorfail($id);
         $gallery->title = $request->title;

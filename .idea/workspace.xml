@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="" />
+    <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/insert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/insert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,22 +165,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/contact" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\gallery" />
-      <recent name="C:\xampp\htdocs\laravel\project\public\images" />
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\report" />
-      <recent name="C:\xampp\htdocs\laravel\project\public\font" />
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\slider" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\pages" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\laravel\project\public\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\contact" />
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\pages" />
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\slider" />
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\report" />
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\gallery" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.master.blade.php">
@@ -227,7 +243,11 @@
       <workItem from="1585500903087" duration="3186000" />
       <workItem from="1585505382253" duration="7675000" />
       <workItem from="1585585185713" duration="2947000" />
-      <workItem from="1585664238871" duration="21393000" />
+      <workItem from="1585664238871" duration="21666000" />
+      <workItem from="1585753885760" duration="49000" />
+      <workItem from="1585859724891" duration="305000" />
+      <workItem from="1585860055321" duration="33000" />
+      <workItem from="1585860109046" duration="4841000" />
     </task>
     <servers />
   </component>
@@ -247,10 +267,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585509764452" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585500899328">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585860147387">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585500899328" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585860147387" />
     <state width="1323" height="158" key="GridCell.Tab.0.bottom" timestamp="1583501447745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -271,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585664235187">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585860114433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585664235187" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585860114433" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1585510530186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

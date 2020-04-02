@@ -33,6 +33,7 @@
         float: right;
         text-align: center;
         margin-top: 10px;
+        cursor: pointer;
     }
 
     #logo img {
@@ -75,7 +76,7 @@
 
 <div id="menu">
     <div id="logo">
-        <img src="{{asset('logo/logo.png')}}">
+        <a href="{{route('main')}}"><img src="{{asset('logo/logo.png')}}"></a>
     </div>
     <div id="navigator">
         <ul>
