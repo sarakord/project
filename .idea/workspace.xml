@@ -3,19 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="4c116a53-d7f6-4154-b2a6-25fb61a6df5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gallery/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gallery/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/insert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/crud.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/crud.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/allreport.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allreport.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/report.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/report/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/report/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/insert.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider/insert.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="blade" />
+        <option value="XSLT Stylesheet" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -166,21 +172,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/contact" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\pages" />
-      <recent name="C:\xampp\htdocs\laravel\project\resources\views\layouts" />
-      <recent name="C:\xampp\htdocs\laravel\project\public\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\contact" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\pages" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\slider" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\report" />
       <recent name="C:\xampp\htdocs\laravel\project\resources\views\gallery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\pages" />
+      <recent name="C:\xampp\htdocs\laravel\project\resources\views\layouts" />
+      <recent name="C:\xampp\htdocs\laravel\project\public\js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.master.blade.php">
@@ -248,6 +255,8 @@
       <workItem from="1585859724891" duration="305000" />
       <workItem from="1585860055321" duration="33000" />
       <workItem from="1585860109046" duration="4841000" />
+      <workItem from="1585871714734" duration="661000" />
+      <workItem from="1585919775944" duration="17580000" />
     </task>
     <servers />
   </component>
@@ -291,17 +300,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583452548814" />
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585860114433">
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585919922326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585860114433" />
+    <state x="359" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585919922326" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1585510530186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585510530186" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584113295030">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585927120009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584113295030" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585927120009" />
   </component>
 </project>

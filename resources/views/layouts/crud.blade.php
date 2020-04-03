@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title') </title>
     <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    @yield('attach')
 </head>
 <body>
 <style>

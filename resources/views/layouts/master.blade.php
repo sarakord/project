@@ -7,72 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/master.css')}}">
     @yield('attach')
 </head>
 
 <body>
-
-<style>
-
-    @font-face {
-        font-family: 'vazir';
-        src: url({{asset('font/Vazir.eot?#')}}) format('eot'),
-        url({{asset('font/Vazir.woff')}}) format('woff'),
-        url({{asset('font/Vazir.ttf')}}) format('truetype');
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    #menu {
-        margin-top: -130px;
-    }
-
-    #logo {
-        width: 450px;
-        height: 80px;
-        float: right;
-        text-align: center;
-        margin-top: 10px;
-        cursor: pointer;
-    }
-
-    #logo img {
-        width: 150px;
-        height: 50px;
-    }
-
-    #navigator {
-        float: left;
-    }
-
-    #navigator ul li {
-        font-family: vazir;
-        list-style: none;
-        float: right;
-        margin-left: 45px;
-        margin-top: 10px;
-        font-size: 12pt;
-        width: 100px;
-        height: 35px;
-        text-align: center;
-        line-height: 33px;
-    }
-
-    #navigator ul li.act {
-
-        border-radius: 4px;
-        background: red;
-    }
-
-    #navigator ul li.act a {
-        color: white !important;
-    }
-
-    #navigator ul li a {
-        text-decoration: none;
-        color: black;
-    }
-</style>
 
 <div id="menu">
     <div id="logo">
@@ -80,191 +19,35 @@
     </div>
     <div id="navigator">
         <ul>
-            <li class="act">
+            <li>
                 <a href="{{route('main')}}">
                     صفحه اصلی
                 </a>
             </li>
-            <li class="">
+            <li>
                 <a href="{{route('gallery')}}">
                     گالری
                 </a>
             </li>
-            <li class="">
+            <li>
                 <a href="{{route('report.all')}}">
                     آخرین اخبار
                 </a>
             </li>
-            <li class="">
+            <li>
                 <a href="{{route('about')}}">
                     درباره ما
                 </a>
             </li>
-            <li class="">
-                <a href="{{url('contact')}}">
+            <li>
+            <a href="{{url('contact')}}">
                     تماس با ما
                 </a>
             </li>
         </ul>
     </div>
 </div>
-<script>
-    $('#navigator ul li').click(function () {
-        $('#navigator ul li').removeClass('act');
-        $(this).addClass('act');
-    });
-</script>
 
-<style>
-
-    #slider {
-        position: relative;
-        top: 300px;
-    }
-
-    * {
-        box-sizing: border-box
-    }
-
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0
-    }
-
-    .mySlides {
-        display: none
-    }
-
-    img {
-        vertical-align: middle;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        width: 1229px;
-        position: relative;
-        border: 1px solid #761ea2;
-        box-shadow: 1px 2px 3px #761ea2;
-        margin-top: 140px;
-        margin-left: 63px;
-    }
-
-    .mySlides img {
-        width: 100%;
-        margin-top: -89px;
-    }
-
-    img {
-        width: 747px;
-        height: 240.55px;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 54%;
-        width: auto;
-        padding: 0px;
-        margin-top: -22px;
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #7f29bf;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next, .text {
-            font-size: 11px
-        }
-    }
-
-    #Slider {
-        position: relative;
-        top: 92px;
-    }
-
-    .footer {
-        background: #be97d2;
-        width: 100%;
-        height: 170px;
-        float: right;
-        margin-top: 120px;
-    }
-
-    .footer p {
-        color: black;
-        text-align: center;
-        font-family: vazir;
-        font-size: 16pt;
-    }
-
-    .footer span{
-        display: block;
-        text-align: center;
-    }
-
-    .footer span i {
-        background: url("{{asset('images/slices.png')}}");
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        margin-left: 10px;
-    }
-
-</style>
 <div id="Slider">
     <div class="slideshow-container">
 
@@ -313,7 +96,8 @@
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+        // dots[slideIndex - 1].className += " active";
+        this.className += " active";
     }
 
 </script>
@@ -334,5 +118,34 @@
         <i style="background-position: -617px -619px;"></i>
     </span>
 </div>
+
+
+<script>
+
+        $('#navigator ul li').click(function () {
+            localStorage.removeItem("class");
+            $('#navigator> ul> li ').removeClass('act');
+
+            localStorage.setItem("class",$(this).index());
+        });
+        $(document).ready(function() {
+            SetClass();
+            localStorage.removeItem("class");
+
+        });
+
+        function SetClass() {
+            $('#navigator ul li').each(function (index) {
+                if (index == localStorage.getItem("class") && index != 0) {
+                    $("#navigator ul li").first().removeClass("act");
+                    $(this).addClass("act");
+                } else if (index == 0) {
+                    $("#navigator ul li").first().addClass("act");
+
+                }
+            });
+        }
+
+</script>
 </body>
 </html>
