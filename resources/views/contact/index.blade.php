@@ -1,7 +1,7 @@
 @extends('layouts.crud')
 
 @section('attach')
-    <link rel="stylesheet" href="{{asset('css/contact.management.css.css')}}">
+    <link rel="stylesheet" href="{{asset('css/contact.management.css')}}">
 @endsection
 
 @section('title')
@@ -65,7 +65,6 @@
     </div>
     <div id="dark"></div>
     <div class="fix">
-        <h1><a href="{{route('report.create')}}" class="btn">Create</a></h1>
         <h1><a href="{{route('main')}}" class="btn">Main Page</a></h1>
         <h1><a href="{{route('gallery.index')}}" class="btn">Gallery</a></h1>
         <h1><a href="{{route('slider.index')}}" class="btn">Slider</a></h1>

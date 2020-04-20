@@ -55,7 +55,6 @@
                 <a href="{{route('report.edit',$item->id)}}"><input type="submit" value="Edit"></a>
             </li>
             <li>
-            <li>
                 <form action="{{route('report.destroy',$item->id)}}" method="post">
                     @csrf
                     @method('delete')

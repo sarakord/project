@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    
+
 <div>
     <ul class="header">
         <li>Id</li>
@@ -35,7 +35,8 @@
                     @csrf
                     @method('delete')
                     <input type="submit" value="Delete">
-                </form></li>
+                </form>
+            </li>
 
         </ul>
     @endforeach

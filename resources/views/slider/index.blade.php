@@ -32,14 +32,15 @@
                     @csrf
                     @method('post')
                     <input type="submit" value="Trash">
-                </form></li>
-            <li>
+                </form>
+            </li>
             <li>
                 <form action="{{route('slider.destroy',$item->id)}}" method="post">
                     @csrf
                     @method('delete')
                     <input type="submit" value="Delete">
-                </form></li>
+                </form>
+            </li>
 
         </ul>
     @endforeach
